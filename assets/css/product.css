@@ -2,73 +2,211 @@
   max-width: 960px;
 }
 
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #363432;
+}
+
 /*
  * Custom translucent site header
  */
+#nostylelist {
+  list-style: none;
+  color: #363432;
+}
 
-.site-header {
+#navlogo {
+  font-weight: 700;
+}
+
+#site-header {
   background-color: rgba(0, 0, 0, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
 }
-.site-header a {
-  color: #999;
+
+#site-header a {
+  /* color: #fff; */
   transition: ease-in-out color .15s;
 }
-.site-header a:hover {
-  color: #fff;
+
+#site-header a:hover {
+  color: #F05400;
   text-decoration: none;
 }
 
-/*
- * Dummy devices (replace them with your own or something else entirely!)
- */
-
-.product-device {
-  position: absolute;
-  right: 10%;
-  bottom: -30%;
-  width: 300px;
-  height: 540px;
-  background-color: #333;
-  border-radius: 21px;
-  -webkit-transform: rotate(30deg);
-  transform: rotate(30deg);
+.btn-outline-secondary:hover {
+  color: #F05400;
+  background-color: #fff;
+  border-color: #F05400;
 }
 
-.product-device::before {
-  position: absolute;
-  top: 10%;
-  right: 10px;
-  bottom: 10%;
-  left: 10px;
-  content: "";
-  background-color: rgba(255, 255, 255, .1);
+a .btn-outline-secondary:hover {
+  color: white;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #F05400;
+  border-color: #F05400;
+}
+
+.btn-primary:hover {
+  color: #F05400;
+  background-color: #fff;
+  border-color: #F05400;
+}
+
+strong {
+  color: #F05400;
+}
+
+li {
+  /* list-style: decimal-leading-zero; */
+  margin: 0 0 0 2em;
+  /* list-style: none; */
+}
+
+#albumz div img {
+  padding: 0px !important;
+}
+
+div img {
+  padding-bottom: 3.0rem;
+  padding-top: 0.5rem;
+}
+/
+.section {
+  /* padding-top: 1.5rem; */
+  padding-bottom: 2.5rem;
+  margin: auto;
+}
+
+.section p {
+  padding-bottom: 1.5rem;
+}
+
+
+
+#ms1 li {
+  /* line-height: 1.5em; */
+  padding-bottom: .5em;
+}
+
+
+
+.sectiontitle {
+  /* font-size: 3.0rem; */
+  color: #F05400;
+  padding-top: 2.0rem;
+  /* padding-bottom: 1.5rem; */
+}
+
+.sectiontitle h1 {
+  font-size: 3.0rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1.0rem;
+}
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+
+
+
+/* Modal code  */
+/* Style the Image Used to Trigger the Modal */
+.myImg {
   border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.product-device-2 {
-  top: -25%;
-  right: auto;
-  bottom: 0;
-  left: 5%;
-  background-color: #e5e5e5;
+.myImg:hover {
+  opacity: 0.65;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  /* width: 50%; */
+  max-width: 1200px;
+}
+
+/* focus for tab index  */
+/* *:focus {
+  box-sizing: content-box;
+  border: 3px solid #b5212e;
+} */
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
 
 /*
  * Extra utilities
  */
-
-.flex-equal > * {
+.flex-equal>* {
   -ms-flex: 1;
   flex: 1;
 }
+
 @media (min-width: 768px) {
-  .flex-md-equal > * {
+  .flex-md-equal>* {
     -ms-flex: 1;
     flex: 1;
   }
 }
 
-.overflow-hidden { overflow: hidden; }
+.overflow-hidden {
+  overflow: hidden;
+}
