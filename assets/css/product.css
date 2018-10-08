@@ -43,7 +43,7 @@ body {
 }
 
 a .btn-outline-secondary:hover {
-  color: white;
+  color: #fff;
 }
 
 .btn-primary {
@@ -66,6 +66,10 @@ li {
   /* list-style: decimal-leading-zero; */
   margin: 0 0 0 2em;
   /* list-style: none; */
+}
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+  color: #F05400 !important;
+
 }
 
 #albumz div img {
