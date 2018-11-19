@@ -126,8 +126,66 @@
     <!-- The big concepts -->
     <div class="container section">
       <header class="sectiontitle">
+        <h1>Ideation and Selection</h1>
+      </header>
+      <p>Based on the research findings, we felt like we had enough information to ideate and further refine our design concept.  To guide our refining, we used the following core principles, which were derived directly from the study findings we describe in the section above:
+      </p>
+      <ol>
+        <li>Prioritizing individual usage</li>
+        <li>User perceptions about public exercises</li>
+        <li>Better user control</li>
+        <li>Respect user privacy concern</li>
+        <li>Supportive guidance</li>
+        <li>Non-Distracting User Interface</li>
+      </ol>
+      <p>Below are the decisions we made regarding how LG could better serve users through recommending and fitting exercises into their daily lives.</p>
+      <h3>1. Focus on individual usage scenarios</h3>
+      <p>According to our research, users feel uncomfortable with involving their friends in LG activities. Most of them would not use this feature in social settings. Therefore, we decided to focus on individual usage instead of involving other users into activities. We won’t build in any activity features where multiple people are using LG routes together.
+      </p>
+      <h3>2. Recommending walking and running as primary exercises, climbing as secondary</h3>
+      <p>We found that users feel awkward doing some exercises in public such as stretching, but walking and running are what most users are comfortable with, and climbing is what some users really enjoy. Therefore, we decided to focus on these three opportunity areas.
+      </p>
+      <h3>3. Display information visually and verbally, and support user input with voice and gesture control</h3>
+      <p>Users worked with voice and gesture controls extensively in our study, and text is an important assistant for users especially in a noisy environment. However, the amount of text we used in the study was too much for users to read and was placed in such a manner as to impede the users sight. Therefore, we will keep the voice interaction, reduce the text to a minimum amount, and place text on side part of the LG view to ensure users can clearly see through LG glasses.
+      </p>
+      <h3>4. Provide multiple choices</h3>
+      <p>Overall, users prefer having  moderate levels of choice, particularly in the realms of route selection and user profile preference.  When LG detects an opportunity area for users, it will provide a multiple exercise recommendations for users to choose. When users are moving from one spot to another, LG can suggest multiple routes with information such as choice in time taken, intensity of exercise, and distance.
+      </p>
+      <h3>5. Only track exercise relevant data</h3>
+      <p>Users had privacy concerns and did not like to have LG access their friend lists, contact information and any other personal background information, so we will only track user calories and exercises for user reference.   We won’t track information such as home locations, social contacts, time spent at a location, or other details that could be used to infer personal information the user isn’t actively sharing.
+      </p>
+      <h3>6. Provide calories, time, and health relevant information</h3>
+      <p>Based on user feedback, calories burned was the most important health information to be tracked. Time is also important because they do not want to be late due to doing extra exercises on their way, and they prefer to see how much time will take and how much time left for them to get to their destination. In addition,. Our subjects mentioned some existing products and services such as Fitbit and MyFitnessPal as comparator products that show good amounts of health information.  We will relook at these comparator products, and use their health visualizations as a template for our own.  We will also look at adding a personal goal structure to allow users to specify goals that they can measure their health information against.
+      </p>
+      <h3>7. Provide enough guidance for on boarding and data usage</h3>
+      <p>
+        LG represents powerful, emerging technology, and a correct, informative onboarding sequence seems necessary to introduce our users to the product, based on our study results. We will need to provide an onboarding walkthrough that explains basic AR concepts, as well as the primary features of the app. Our first-time setup phone experience will need to be particularly informative, so that users know what the different setting are, and how they affect the glasses experience. In addition, we will articulate how the collected data will be used, so users will be informed and will be more comfortable with providing the data.
+      </p>
+      <h3>8. Non-Distracting User Interface </h3>
+      <p>UI design should be optimized to support the visual experience of walking/running.  UI design should be non-intrusive and minimalistic, allowing the user to maintain situational awareness of the real-world environment.
+      </p>
+    </div>
+
+    <div class="container section">
+      <header class="sectiontitle">
         <h1>System Proposal</h1>
       </header>
+      <p>
+        Our final system proposal is a time-management system designed to integrate cardiovascular exercise into the daily non-exercise routine of a university student.  As the student goes about their daily exercise activity, the system will scan their calendar system and compare it with location data to generate ad-hoc walking/running routines that still fit with the students schedule.  These system consists of the following sub-components:
+      </p>
+      <ul>
+        <li>
+          A set of AR glasses that control the primary walking/running experience.  These glasses overlay the users vision, and provide Google Maps style walking/running guidance.  At the beginning of their travel routine, users put on and activate their glasses.  The AR glasses then calculate possible walking/running routes based on a variety of user-specific information, and then provides the user a choice of routes.  The primary categorization metric for the route selection will be time before the next event on the user's schedule, but the app will provide additional selection criteria, such as route distance, calories burned, points of interest along the route, and other factors.  Once a route has been selected, the glasses provide step-by-step navigation, scanning and updating the estimated time of arrival as needed based on real-world conditions.  Once the route has been completed, the glasses will provide a summary screen showing how the exercise fits into the users overall exercise experience.
+        </li>
+        <li>
+          A companion smartphone app that lets the user view and control functionality that would be awkward to deal with while walking around.  The companion app includes the following control features:
+          <ul>
+            <li>The ability to enter in personal metrics (height, weight, etc) that the glasses will use to generate routes.</li>
+            <li>The ability to select what calendars the glasses can see and make assumptions on.</li>
+            <li>The ability to enter in personal health goals, which the glasses will also use as input into its routing algorithm.</li>
+          </ul>
+        </li>
+      </ul>
 
     </div>
 
@@ -141,7 +199,39 @@
       <header class="sectiontitle">
         <h1>Demo Proposal</h1>
       </header>
+      <p>We will create a medium-fidelity prototype to demonstrate our unified concept to target users. We say medium-fidelity, because our concept is ultimately built around the idea that extremely light-weight, nearly-invisible AR glasses and contacts do not yet exist. Instead, we will use an existing AR glasses system to give our users the first-person perspective on what the experience would be like, assuming that those light-weight system really did exist.
+      </p>
+      <p>
+        This demo will not be a fully-developed AR application with every feature specified in our system proposal. We have neither the time nor expertise to develop every feature listed in our system proposal. In addition, the “scanning component” of the system proposal requires image processing and context awareness technology that, so far as we are aware, does not yet exist. Our goal will be to instead create a simulation of the overall experience, using an AR app with appropriately design UI components to give the impression of a working app, and prepositioned AR markers that will resemble the experience of “scanning” the environment.
+      </p>
+      <p>
+        <strong>Hardware:</strong> We will need to use the following hardware components to create our product:
+      </p>
+      <ul>
+        <li>Samsung Gear VR/AR glasses (already acquired)</li>
+        <li>Samsung Android-based phone compatible with Samsung Gear VR/AR (already acquired)</li>
+        <li>Image Marker printouts.</li>
+        <li>Earbud Audio Input/Output Solution:  We will use earbud with an in-built microphone connected to the Gear VR headset as our solution for any audio input/output needs.
+        </li>
+      </ul>
+
+      <p>
+          <strong>Software:</strong> We will need to use the following software components to create our product:
+        </p>
+      <ul>
+        <li>AFrame AR/VR framework: We will build the core application in AFrame. AFrame is a web-based framework that allows for a browser-based AR experience.  An advantage of this approach is that the applications developed will run on any device that has a compatible browser (Firefox or Chromium), and access to a camera.  This gives us the ability to record experiences on both the AR glasses and with a laptop, allowing us to piece together an overall video experience using a variety of platforms.  We will run our AFrame app off a Github Pages website.
+        </li>
+        <li>Oculus VR App: The Gear VR requires the use of a special app that automatically activates when the phone is inserted into the Gear VR headset.  We will run our browser-based AR experience IN the Oculus VR app.
+        </li>
+        <li>Youtube Gaming: We would like to capture the visual experience of our AR app as prospective users experience it. Our currently plan is to use the Youtube Gaming app to capture the screen and microphone output of the Gear VR.  This approach currently suffers from one flaw:  the Gear VR app outputs in stereoscopic view, which means the recording audio is split up into two views - one for each eye.  We will continue searching for recording approaches that will better display the actual experiences users have with the system.
+        </li>
+      </ul>
     </div>
+
+    <div class="container section">
+        <header class="sectiontitle">
+          <h1>Demo Storyboard</h1>
+      </div>
 
     <div class="container section">
       <header class="sectiontitle">
