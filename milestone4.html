@@ -78,13 +78,13 @@
           <h1>High-Level Architecture</h1>
         </header>
         <p>
-          In sum, LG uses intelligent neural networks and AR technology to recommend moments of exercise and alternative paths that the student can take. The exercises that LG recommends can be seen in the world as 3D objects that guide the user on how to complete
-          those exercises. On the glasses, there are two cameras for each lens, a sensor array and GPS. LG is an intelligent system and connected to the student's account information, so it understands the student's schedule. Thus, it can map out in real
-          time different paths the student can take and the respective caloric burn from those paths. </p>
+          In sum, LG uses <strong>intelligent computer vision, machine learning and AR technology</strong> to recommend moments of exercise and alternative paths that the student can take. The exercises that LG recommends can be seen in the world as 3D
+          objects that guide the user on how to complete those exercises. On the glasses, there are two cameras for each lens, a sensor array and GPS. LG is an intelligent system and connected to the student's account information, so it understands the
+          student's schedule. Thus, it can map out in real time different paths the student can take and the respective caloric burn from those paths. </p>
 
         <p>
-          Privacy is an important factor in our concept. We chose to anonymize all of the data that the user shares with us in order to secure their data. We also minimize the type of information we collect and only collect the information that is the bare minimum
-          to run the core features.
+          <strong>Privacy is an important factor in our concept</strong>. We chose to anonymize all of the data that the user shares with us in order to secure their data. We also <strong>minimize</strong> the type of information we collect and only collect
+          the information that is the bare minimum to run the core features. For example, we <strong>don’t ask or collect information related to the user’s home location</strong> as this proves no use in the product.
         </p>
         <img style="width:80%; height:80%;" class="myImg" src="assets/images/ms4_ar_ia.png" alt="An image of the Information Architecture">
 
@@ -103,7 +103,7 @@
               We want to <strong>demonstrate the feasibility</strong> of a pair of <strong>AR glasses</strong> by highlighting one use-case that future users can have.
             </li>
             <li>
-              We want to demonstrate how users interact with the AR glasses. We want to showcase a user going through an ideal scenario of exercising on the way to class.
+              We want to demonstrate how users <strong>interact with the AR glasses</strong>. We want to showcase a user going through an <strong>ideal scenario of exercising</strong> on the way to class.
 
               </h2>
           </ol>
@@ -116,15 +116,20 @@
           <h1>The Demo</h1>
         </header>
         <p>
-          For the demonstration, we will accomplish these goals by utilizing a few technical tools. First, we will use a framework called A-Frame, the backend of our system. We will also use a Samsung Gear–A Virtual Reality Headset–in order to mimic the look and
-          feel of using a real AR headset. We believe the demonstration will be a catalyst for further research and development to improve the experience.</p>
-
+          For the demonstration, we will accomplish these goals by utilizing a few technical tools. First, we will use a framework called A-Frame, the backend of our system. A frame is a web-based VR framework, based on Javascript. It allows running a VR experience
+          right in a browser window. In addition to this, we used an additional library call AR.js to add the AR layer and the ability to access the device camera. To demonstrate what the feel of using an AR headset, we use a Samsung Gear, a Virtual Reality
+          Headset.</p>
         <p>
-          After an introduction to the product and the user, we will demonstrate a set of activities that our end user might do. We are utilizing a wizard-of-oz methodology to augment the experience for the users and onlooking participants. In sum, our user is
-          heading to class from their home while wearing their AR glasses. During this trip, they’ll do a set of exercises and activities that fit conveniently into their schedule. While our user is performing these tasks, we’ll be streaming what they
-          see to a nearby TV/Monitor. To subside any confusion, our user will talk-aloud about their experience so audience members can see.
-        </p>
-        <img style="width:60%; height:60%;" class="myImg" src="assets/images/ms4_irl_ar.jpg" alt="An image of what we invision the AR system to look like.">
+          Although, we don't use the Samsung Gear for the full demo because we found it extremely restrictive to develop for it. So the Samsung Gear will primarily be used to demonstrate the look and feel. Therefore, we're using a Google Pixel smartphone and live
+          streaming a first-person view of the interactions. We believe the demonstration will be a catalyst for further research and development to improve the experience.
+
+
+          <p>
+            After an introduction to the product and the user, we will demonstrate a set of activities that our end user might do. We are utilizing a wizard-of-oz methodology to augment the experience for the users and onlooking participants. In sum, our user is
+            heading to class from their home while wearing their AR glasses. During this trip, they’ll do a set of exercises and activities that fit conveniently into their schedule. While our user is performing these tasks, we’ll be streaming what they
+            see to a nearby TV/Monitor. To subside any confusion, our user will talk-aloud about their experience so audience members can see.
+          </p>
+          <img style="width:60%; height:60%;" class="myImg" src="assets/images/ms4_irl_ar.jpg" alt="An image of what we invision the AR system to look like.">
 
       </div>
 
@@ -156,12 +161,28 @@
         <header class="sectiontitle">
           <h1>Demo’s Shortcomings </h1>
         </header>
+        <h2>AR Formfactor</h2>
         <p>
-          Although the concept covered the basic interactions of our concept, it came short to covering the ubiquitous factors. We had envisioned our product to follow a similar form factor as any other pair of bifocal glasses, with the added benefit of our AR technology. Since we used a Samsung Gear and A-Frame, our form factor deterred us from fully immersing our user in the AR experience. The primary fault of that is because there is a slight visual delay between what the user sees and reality. Additionally, the angular view from the Gear causes distortion which makes it difficult but not impossible to navigate freely.
+          Although the concept covered the basic interactions of our concept, it came short to covering the ubiquitous factors. We had envisioned our product to follow a similar form factor as any other pair of bifocal glasses, with the added benefit of our AR
+          technology. Since we used a Samsung Gear and A-Frame, our form factor deterred us from fully immersing our user in the AR experience. The primary fault of that is because there is a slight visual delay between what the user sees and reality.
+          Additionally, the angular view from the Gear causes distortion which makes it difficult but not impossible to navigate freely.
         </p>
-          <p>
-            Furthermore, although in our early testing we had discovered that a lot of our participants interacted with our prototype using their voice, we were not able to implement voice interactivity into this demo. The limitations of this were primarily with our hardware and software used. This is why we employed a wizard-of-oz approach and had the screens cycle as our user completed objectives.
-          </p>
+        <h2>Gear: Blessing and A Curse</h2>
+        <p>
+          Additionally, the Gear VR became an issue for a few reasons. The main reason is that the web browser is run within the Gear VR virtual environment, and that environment roots the browser in place. Thus, if you move too much, you can't see the browser
+          window any longer. Secondly, we only had one phone compatible with the Gear VR, and that phone was old enough that it didn't work well when asked to run both Gear VR and the AR browser. For that reason, we will use the Gear VR only to show in-person
+          demo attendees what the UI might feel like but will use just a phone for actual demo. We'll stream a live view from our app user to the demo area, to show what a use case for the app looks like from a first-person perspective.
+        </p>
+        <h2>Interactions</h2>
+        <p>
+          Furthermore, although in our early testing we had discovered that a lot of our participants interacted with our prototype using their voice, we were not able to implement voice interactivity into this demo. The limitations of this were primarily with
+          our hardware and software used. This is why we employed a wizard-of-oz approach and had the screens cycle as our user completed objectives.
+        </p>
+        <h2>Short Of A Miracle</h2>
+        <p>
+          Also, our ambition to scan the environment and provide context suggestions and new exercise opportunities weren’t achieved. This was difficult to achieve with the current technology. The computer vision and machine learning requirement with high scalability
+          don’t exist right now. In the future, when this technology becomes readily available, this feature could become extremely useful and be easily applied.
+        </p>
       </div>
 
       <div class="container section">
@@ -170,9 +191,10 @@
         </header>
         <p>
           Throughout our development process, we encountered insights that we thought we should mention.</p>
-          <h2>Visual Acuity</h2>
-          <p>
-          First, when designing visual elements, it's needed that the elements have excellent visual acuity regardless of the environment. We've tested a mixture of diverse backdrops colors and transparencies in order to find the best combination regardless of the background conditions.  We found that a transparent dark-grey background allowed the elements to stand out, despite the environment. Also, indicating selection choice is best marked with a light blue line and an accompanying glow.
+        <h2>Visual Acuity</h2>
+        <p>
+          First, when designing visual elements, it's needed that the elements have excellent visual acuity regardless of the environment. We've tested a mixture of diverse backdrops colors and transparencies in order to find the best combination regardless of
+          the background conditions. We found that a transparent dark-grey background allowed the elements to stand out, despite the environment. Also, indicating selection choice is best marked with a light blue line and an accompanying glow.
         </p>
         <img style="width:25%; height:20%;" class="myImg" src="assets/images/ms4_04_Route_selected(1).png" alt="  ">
         <img style="width:25%; height:20%;" class="myImg" src="assets/images/ms4_04_Route_selected.png" alt="  ">
@@ -183,13 +205,15 @@
 
         <h2>Peripheral Vision</h2>
         <p>
-          Second, peripheral vision UI design also takes careful sizing and placement: Initially, our UI elements cluttered the central vision and made it difficult to see the background. We learned that it is important to move the elements to the side and avoid the central vision as much as possible. Also, it's important to modify the size and estimate how much space each element takes up, in order to balance the UI readability and the amount of vision that's obscured.
+          Second, peripheral vision UI design also takes careful sizing and placement: Initially, our UI elements cluttered the central vision and made it difficult to see the background. We learned that it is important to move the elements to the side and avoid
+          the central vision as much as possible. Also, it's important to modify the size and estimate how much space each element takes up, in order to balance the UI readability and the amount of vision that's obscured.
         </p>
         <img style="width:50%; height:50%;" class="myImg" src="assets/images/ms4_mockup1.jpg" alt="cover image of a person holding futureistic glasses with Augmented reality">
 
         <h2>Sound</h2>
         <p>
-          Third, we also learned that, while testing, it was exceptionally easy to miss a notification or reminder from LG. To correct for this problem, we added an auditory reminder. An audio notification improved the situational awareness without making the screen more cluttered. The audio messages were specifically for the important notifications.
+          Third, we also learned that, while testing, it was exceptionally easy to miss a notification or reminder from LG. To correct for this problem, we added an auditory reminder. An audio notification improved the situational awareness without making the screen
+          more cluttered. The audio messages were specifically for the important notifications.
           <img style="width:45%; height:50%;" class="myImg" src="assets/images/ms4_Notification_white.png" alt="An image of an alert icon">
 
         </p>
